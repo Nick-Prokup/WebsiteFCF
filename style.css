@@ -1,0 +1,583 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+
+
+FCF CSS style stylesheet
+Author: Nicholas Prokup
+Updated: August 2022
+Version: 1.2
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* MY CODE TO STYLE MOBILE AND WEBPAGE */
+
+/* Webpage takes up all space */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header styling */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 150px;
+  background-color: rgba(245, 195, 230, 1.0);
+  display: table;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 100px;
+  }
+}
+
+header .header-mobile {
+  display: block;
+  padding: 20px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+body {
+  display: block;
+  background-image: url(images/FCF-pic.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+/* navbar CSS */
+nav {
+  display: table-cell;
+  vertical-align: middle;
+  width: fit-content;
+  width: 100%; /* FIGURE OUT SCALABLILTY */
+  position: fixed;
+  top: 0;
+  height: 150px;
+  background-color: rgba(245, 195, 230, 1.0);
+}
+
+/* nav bar changes between mobile and web access */
+@media only screen and (min-width: 768px) {
+  nav {
+    height: 110px;
+    margin: 0 0 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header nav ul li {
+    list-style: none;
+    float: left;
+    display: inline-block;
+    line-height: 0px;
+    /* ******* */
+    margin: 15px auto 100px auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header .header-mobile {
+    position:fixed;
+    left:-10px;
+    top:-15px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+@media only screen and (min-width: 768px) {
+  header nav ul {
+    float: left
+    right: 20px;
+    width: 100%;
+  }
+}
+
+header .menu {
+  display: inline-block;
+  float: right;
+}
+
+@media only screen and (min-width: 768px) {
+  header .menu {
+    margin: 50px 0px auto 200px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .hidden {
+    display: inline;
+  }
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+@media only screen and (min-width: 768px) {
+  header nav ul li {
+    width: 100%
+    line-height: 70px;
+  }
+}
+
+header nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 20;
+  font-family: trebuchet MS;
+  font-style: oblique;
+  color: black;
+  padding: 0 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  header nav ul li a {
+    padding: 0 15px;
+  }
+}
+
+header nav ul li a:hover {
+  color: white;
+}
+
+/* MAIN SECTIONS */
+
+/* ensures main section has sizing appropriate to device */
+main {
+  width: 100%;
+  display: table;
+}
+
+/* main size changes between mobile and web access */
+@media only screen and (min-width: 900px) {
+  main {
+    width: 65%;
+    margin: 100px 17% 0 17%;
+  }
+}
+
+/* wrapper class for the main white screen on all pages */
+.mainWrapper {
+  margin: 150px 0 0 0;
+  width: fit-content;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+.marginBouquet {
+  padding-top: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+  .marginBouquet {
+    padding-top: 0px;
+  }
+}
+
+/* IMAGES */
+
+/*Image classes formats */
+.img-logo {
+  width: 150px;
+  height:150px;
+  display: block;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  padding:50px 50px 50px 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-logo {
+    margin-top: 50px;
+    width: 300px;
+    height:300px;
+  }
+}
+
+.about {
+   width: 390px;
+   height: auto;
+   margin-top: 150px;
+    border: 5px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 96.8%;
+    padding:5px 5px 5px 5px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .about {
+    margin-top: 10px;
+  }
+}
+
+.stats {
+  margin-top: 125px;
+  width: 99%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .stats {
+    margin-top: 50px;
+
+  }
+}
+
+.gardenLinks {
+  margin-top: 50px;
+  width: 99%;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .gardenLinks {
+
+  }
+}
+
+/* Image framing for portfolio - color bouquet */
+.port-Cframe {
+  border: 7px solid rgb(50,50,50);
+  width: 250px;
+  height: 250px;
+  background-image: url(images/frame-colors.JPG);
+  background-size: 100%;
+  background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .port-Cframe {
+      margin-left: 70px;
+      width: 300px;
+      height: 300px;
+  }
+}
+
+/* Image framing for portfolio - white bouquet */
+.port-Wframe {
+  border: 7px solid rgb(50,50,50);
+  width: 250px;
+  height: 250px;
+  background-image: url(images/frame-white.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .port-Wframe {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Image framing for portfolio - pink bouquet */
+.port-Pframe {
+  border: 7px solid rgb(50,50,50);
+  width: 250px;
+  height: 250px;
+  background-image: url(images/frame-pink.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .port-Pframe {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Image framing for portfolio - 8x10 bouquet */
+.port-8frame {
+  border: 7px solid rgb(50,50,50);
+  width: 250px;
+  height: 250px;
+  background-image: url(images/flowers-8x10.JPG);
+  background-size: 100%;
+  background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .port-8frame {
+      margin-left: 70px;
+      width: 300px;
+      height: 300px;
+  }
+}
+
+/* Image framing for portfolio - 8x10 bouquet */
+.port-Bframe {
+  border: 7px solid rgb(50,50,50);
+  width: 250px;
+  height: 250px;
+  background-image: url(images/Bframe.jpg);
+  background-size: 100%;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .port-Bframe {
+      width: 300px;
+      height: 300px;
+  }
+}
+
+.img-process {
+  width: 100%;
+}
+
+/* RESPONSIVE AND LOCATION STYLING */
+
+/* Generic centering for images and texts */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  padding:50px 50px 50px 50px;
+}
+
+/* Photo display set so that rows will display clean in the desktop website */
+.row {
+  display: flex;
+}
+
+/* Portfolio column image wrapper for organization */
+@media only screen and (min-width: 768px) {
+  .rowFoto {
+    display: flex;
+  }
+}
+
+/* Portfolio column image wrapper for organization */
+.port-columns {
+  flex: 50%;
+  padding: 60px;
+}
+
+/* FOOTER SECTION */
+
+/* footer alignment and styling */
+.footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  height: 220px;
+  text-decoration-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer column icon wrapper for organization */
+.foot-columns {
+  flex: 50%;
+  padding: 0 0px 0 0;
+}
+
+.foot-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  padding: 10px 300px 0 auto;
+}
+
+/* TEXT STYLES */
+
+.wordSize {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .wordSize {
+    font-size: 35px;
+  }
+}
+
+.linkText {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* heading one font change and sizing */
+h1 {
+  padding: 10px;
+  /* color: rgb(245, 160, 230); */
+  text-align: center;
+  font-size: 12;
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+/* heading two font change and sizing */
+h2 {
+  /* color: rgb(245, 160, 230); */
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+/* h3 (right portfolio image descriptions) font, style and sizing */
+h3 {
+  margin-right: 15px;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+@media only screen and (min-width: 768px) {
+  h3 {
+    margin-right: 50px;
+  }
+}
+
+/* h4 (left portfolio image descriptions) font, style and sizing */
+h4 {
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+@media only screen and (min-width: 768px) {
+  h4 {
+    margin-left: 50px;
+  }
+}
+
+/* paragraph font change and position */
+p {
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  font-family: 'Sue Ellen Francisco', cursive;
+}
